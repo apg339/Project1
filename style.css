@@ -7,6 +7,7 @@
 .container{
     min-height: 100vh;
     display: flex;
+    
    
 }
 .leftbar{
@@ -15,6 +16,8 @@
     background-color: #f5fcff;
     /* position: fixed; */
     width: 75px;
+    /* height: 100vh; */
+    box-shadow: 0 1px 1px rgb(128,128,128);
 
 }
 .logo{
@@ -33,15 +36,15 @@
 }
 
 .header-wrapper{
-    height:100vh;
+    /* height:100vh; */
     overflow: auto;
-    box-shadow: 0 1px 1px rgb(128,128,128);
+    /* box-shadow: 0 1px 1px rgb(128,128,128); */
 }
 
 
 .header a{
     /* height: 100%; */
-    display: inline-block;
+    /* display: inline-block; */
     /* width: 100%; */
     margin: 11px 2px;
     transition: all .3s ease-out;
@@ -55,14 +58,6 @@ a:hover{
     margin:2px ;
 }
 
-.display-container{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    
-    
-    
-}
 
 .topbar{
     height: 70px;
@@ -70,6 +65,7 @@ a:hover{
     /*background-color: #f5fcff;*/
     box-shadow: 0 1px 1px rgba(0,0,0,.10980392156862745);
     align-items: center;
+    min-width: 93.6vw;
     
 }
 
@@ -138,7 +134,6 @@ a:hover{
     margin-left: 4px;
     
 }
-
 
 
 
@@ -220,39 +215,12 @@ a:hover{
 }
 #arrow{
     color: #0080a5;
-}
-#arrow:hover{
     border-radius: 50%;
     color: white;
     background-color: #0080a5;
     cursor: pointer;
 }
-/* @media screen and (max-width:940){
-    div.display-container{
-        background-color: red;
-        width: calc(100%-75px);
-    }
-} */
-/* .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    
-}
-.grid-container>div {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8); 
-    border-bottom: 1px solid #eaf2fe;
-    padding: 15px;
-    font-size: 30px;
-    text-align: center;
-}
-  
-.grid-item1{
-    grid-column-start: 1;
-    grid-column-end: 4;
 
-} */
 
 .name-main{
     text-align: left;
@@ -284,9 +252,9 @@ input:focus{
     margin-top: 10px;
     
 }
-.details{
-    height: 18vh;
-}
+
+
+
 .bottom{
     height: 10vh;
     border-top: 2px solid #EFF2F5;
@@ -340,36 +308,29 @@ td>input{
 tr{
     text-align: right;
 }
-/* tr>th{
-    color: #0080a5;
-} */
+
 table, th, td {
     /* border:1px solid black; */
-    border-spacing: 10px;
+    border-spacing: 15px;
+   
     /* padding-right: 30px; */
     /* border-bottom: 2px solid #EFF2F5; */
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
 
 }
 input{
     outline: none;
 }
 @media screen and (max-width:1739px){
-    div.details{
-        height: 30vh;
+    div.main_content{
+        /* height: 30vh; */
         /* background-color: red; */
+        /* width: 1000vw; */
     } 
 }
 
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    background-color: #fff;
-    color: #444;
-    max-width:  800px;
-}
-  
+
 .box {
     background-color: #444;
     color: #fff;
@@ -377,10 +338,9 @@ input{
     padding: 20px;
     font-size: 150%;
 }
-
-
-.row-one:hover{
-    background-color: #f5fcff;
-    cursor: pointer;
+.row-one{
+    font-size: small;
 }
+
+
 
